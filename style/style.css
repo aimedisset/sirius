@@ -5,6 +5,8 @@
     height : 100px;
 }
 
+
+
 .arrondi {
     border-radius : 10px;
     padding-left : 10px; 
@@ -17,6 +19,14 @@
     border-radius : 10px;
     padding-top : 5px;
     margin : 2% 0;
+    width : 170px;
+    text-align : center;
+}
+    
+.contenu {
+    position: absolute;
+    bottom: -12px;
+    left : 10%;
     
 }
 
@@ -27,6 +37,7 @@
 .transition {
     height : 150px;
     background-color: lightgrey;
+    z-index: 3;
 }
 
 .text_card_justify {
