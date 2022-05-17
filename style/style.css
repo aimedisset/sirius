@@ -38,9 +38,7 @@ main {
 .img_card {
     height : 150px;
 }
-h2 {
-    padding-top : 10px;
-}
+
 .transition {
     height : 30px;
     width : 100%;
@@ -76,13 +74,20 @@ p {
 
 }
 
+h5 {
+    color : grey;
+}
+
 @media(max-width : 650px){
 
     h2 {
-        font-size : 10px;
+        font-size : 12px;
         vertical-align: bottom;
+        padding-top : 20px;
     }
 }
+
+
 
 article {
     animation : animation_article ease 3.5s;
@@ -91,6 +96,7 @@ article {
 h2 {
     color: grey;
     text-shadow: -3px 3px 2px lightgray;
+    padding-top : 10px;
     animation : titreh2 ease 3.5s;
 }
 
@@ -98,7 +104,7 @@ h2 {
 @keyframes titreh2 {
     0%{
         opacity : 0;
-        transform : translateX(150px);
+        transform : translateX(-150px);
     }
     100%{
         opacity : 1;
