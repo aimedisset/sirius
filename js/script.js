@@ -1,5 +1,6 @@
 
-/* Script permettant de masquer la barre de naviguation lorsque l'on ne scroll plus */ 
+/* Script permettant de masquer la barre de naviguation lorsque l'on ne scroll plus */
+if(window.innerWidth<800){ 
 var previousScroll = 0,
 headerOrgOffset = $('header').offset().top;
 
@@ -21,4 +22,4 @@ $(window).scroll(function() {
     previousScroll = currentScroll;
 });
 
-
+}
