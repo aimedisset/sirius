@@ -5,9 +5,7 @@
 
 
 body {
-    margin :0%;
-    padding :0%;
- 
+    background-color: lightgrey;
 }
 
 .img_logo {
@@ -29,7 +27,7 @@ nav {
 .largeur_card {
     width : 100%;
     opacity : 0.9;
-
+    border-radius: 5%;
 }
 /*
 #baniere{
@@ -93,14 +91,15 @@ section {
 
 .contenu {
     position: absolute;
-    z-index : 2;
+    z-index : -2;
     bottom: -12px;
     left : 3%;    
 }
 
 .img_card {
     height : 100%;
-
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
  
 }
 
@@ -145,12 +144,11 @@ p {
 h1 {
     font-family: 'Dancing Script', cursive;
     color: antiquewhite;
-    font-size: 4em;
+    font-size: 5em;
     text-shadow: 1px 3px 2px #191b15;
     margin-top : 100px;
     padding-top : 10px;
     animation : titreh2 ease 3.5s;
-    text-align :center;
     
 }
 h2 {
@@ -158,13 +156,9 @@ h2 {
     text-shadow: -3px 3px 2px lightgray;
     padding-top : 10px;
     animation : titreh2 ease 3.5s;
-    font-family: 'Dancing Script', cursive;
-    font-size : 3em;
 }
 h5 {
-    font-family: 'Dancing Script', cursive;
     color : grey;
-    font-size : 2em;
 }
 
 @media(max-width : 650px){
