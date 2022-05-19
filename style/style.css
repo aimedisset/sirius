@@ -10,6 +10,49 @@ body {
  
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color : white;
+  }
+  
+
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    
+    color : lightgray;
+  }
+  
+  a:active {
+    
+    color: white;
+  }
+
+  #premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: 1px 3px 2px #191b15;
+    margin-top : -10px;
+    padding-top : -20px;
+    animation : animation_article ease 3.5s;
+}
+
 .img_logo {
     border-radius : 20px;
     filter: drop-shadow(15px 10px 4px lightblue);
@@ -17,11 +60,17 @@ body {
     height : 70px;
 }
 
-main {
+.mainPadding {
     padding : 10.5% 3%;
 
     
 
+}
+
+
+
+.text_orange {
+    color : rgba(234, 170, 22, 0.874);
 }
 nav {
     opacity : 0.8;
@@ -49,7 +98,10 @@ section {
     */
     vertical-align : center;
 }
-
+.marge {
+    margin-top : 10px;
+    padding : 11px 3px;
+}
 .img_fond {
     margin-top : 100px;
     padding-top: 60px;
@@ -161,10 +213,59 @@ h2 {
     font-family: 'Dancing Script', cursive;
     font-size : 3em;
 }
+
+h3 {
+    text-align: center;
+    color : antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px #191b15;
+    animation : titreh3 ease 3.5s;
+}
+
 h5 {
     font-family: 'Dancing Script', cursive;
     color : grey;
     font-size : 2em;
+}
+
+.imageLieuDeVie {
+    
+       
+     text-align: center;
+        padding: 30px 10%;
+    
+        position: relative;
+    
+}
+
+  
+  
+
+.imageLieuDeVie h4 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 900px;
+    color : white;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.imageLieuDeVie img {
+    border-radius: 10px;
+    box-shadow: 3px 4px 3px 1px rgba(0,0,0,0.6);
+    width : 300px;
+    height : 200px;
+    
+
+}
+.imageLieuDeVie img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
 }
 
 @media(max-width : 650px){
@@ -178,6 +279,11 @@ h5 {
         padding-top : 5%;
        /* position : relative;*/
     }
+
+   h1{
+       font-size : 2em;
+   }
+
 
 
 }
@@ -202,13 +308,25 @@ article {
     animation : animation_article ease 3.5s;
 }
 
-
+animationGaucheDroite {
+    animation : titreh2 ease 3.5s;
+}
 
 
 @keyframes titreh2 {
     0%{
         opacity : 0;
         transform : translateX(-150px);
+    }
+    100%{
+        opacity : 1;
+        transform : translateX(0px);
+    }
+}
+@keyframes titreh3 {
+    0%{
+        opacity : 0;
+        transform : translateX(250px);
     }
     100%{
         opacity : 1;
