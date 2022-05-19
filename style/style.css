@@ -109,7 +109,7 @@ section {
     background-image: url("../images/jardin_tour.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height :660px;
+    height :auto;
    /* border-radius : 40%;*/
     
     background-attachment: fixed;
@@ -157,8 +157,10 @@ section {
 }
 
 footer {
-    height : 100px;
+    height : auto;
     background-color: rgb(56, 56, 61);
+    
+   
 }
 
 .transition {
@@ -179,21 +181,7 @@ p {
     color : grey;
 }
 
-@media(max-width : 992px){
-    .img_logo {
-        border-radius : 10px;
-        filter: drop-shadow(20px 10px 4px lightgrey);
-        width : 70px;
-        height : 30px;
-        opacity: 1;
-    }
-    .transition {
-        height : 30px;
-        background-color: lightgray;
-        opacity :0;
-    }
 
-}
 h1 {
     font-family: 'Dancing Script', cursive;
     color: antiquewhite;
@@ -268,6 +256,22 @@ h5 {
     transition: 0.6s ease-in-out;
 }
 
+@media(max-width : 992px){
+    .img_logo {
+        border-radius : 10px;
+        filter: drop-shadow(20px 10px 4px lightgrey);
+        width : 70px;
+        height : 30px;
+        opacity: 1;
+    }
+    .transition {
+        height : 30px;
+        background-color: lightgray;
+        opacity :0;
+    }
+
+}
+
 @media(max-width : 650px){
 
     h2 {
@@ -282,6 +286,10 @@ h5 {
 
    h1{
        font-size : 2em;
+   }
+
+   .img_fond {
+       height : 300px;
    }
 
 
