@@ -16,8 +16,8 @@
 </head>
   <body ><!--image fond-->
     
-  
-      <header class="fixed-top">
+     <div class="container-fluid">
+      <header class="row fixed-top">
         <nav class="navbar  navbar-expand-xl navbar-dark bg-primary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#top"><img src="images/sirius_logo.png"  alt="Logo association Sirius" title="logo association sirius" class="img_logo"/></a>
@@ -71,9 +71,9 @@
             </div>
            </div>
       </header>
-        
+      
 
-   <div class="container-fluid"> 
+   <div class="container-fluid"> <!--container fluid-->
      <main>
       <section class="row">
         <div class="row titreBienvenue titreB" > <!--class row et image fond-->
@@ -81,17 +81,17 @@
            <div class="row" id ="premierTrait"></div>
            <h3>Les Lieux de vie</h3>
         </div>
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-              <article class="col p-2">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 mx-auto" style="width:800px; text-align:center; vertical-align: center;">
+              <article class="col pl-2"><!--pl-2-->
                 <div class="imageLieuDeVie">
                   <h4>Lieu de vie Altaïr</h4>
                   <a href = "#"><img src="images/baniereEnfants.jpg" alt ="Lieu de vie Altaïr"></a>
-              </div>
+                </div>
           
           
               
                </article>
-               <article>
+               <article class="col pr-2"><!--pr-2-->
                   <div class="imageLieuDeVie">
                   <h4>Lieu de vie Maïa</h4>
                   <a href = "#"><img src="images/jardin_enfant_dessin.webp" alt ="Lieu de vie Altaïr"></a>
@@ -105,14 +105,16 @@
         
      </section>
     </main>
-  <footer class="row" style ="color : white; font-size : 20px;">
+   </div>
+  <div  class="row" style ="color : white; font-size : 20px;">
+  <footer>
       Hello footer nav bar
   </footer>
+  </div>
   
-
-   <script src="js/jquerry.min.js"></script>
-</div>
-  
+        <script src="js/jquerry.min.js"></script>
+ 
+ </div>
  </body>
      <!-- Our JavaScript -->
      <script src="js/script.js"></script>
