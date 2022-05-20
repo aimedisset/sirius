@@ -1,3 +1,5 @@
+
+/********** import font google **************/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
@@ -9,7 +11,7 @@ body {
     padding :0%;
  
 }
-
+/**************** Thème des liens ***********/
 a {
     outline: none;
     text-decoration: none;
@@ -41,7 +43,7 @@ a:link {
     
     color: white;
   }
-
+/********** Mise en forme page d'accueil ***************/
   #premierTrait {
     height: 1px;
     width: 25%;
@@ -67,14 +69,34 @@ a:link {
 
 }
 
+.img_fond {
+    margin-top : 60px;
+    padding-top: 100px;
 
+    background-image: url("../images/jardin_tour.jpg");
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    height :auto;
+   /* border-radius : 40%;*/
+    
+    background-attachment: fixed;
+    
 
-.text_orange {
-    color : rgba(234, 170, 22, 0.874);
 }
+
+.titreBienvenue {
+   
+    margin-top : 1%
+   
+    
+}
+
+
 nav {
     opacity : 0.8;
 }
+
+/*** taille des card bootstrap, de façon à les contrôler avec les breakpoint responsive ***/
 .largeur_card {
     width : 100%;
     opacity : 0.9;
@@ -102,20 +124,7 @@ section {
     margin-top : 10px;
     padding : 11px 3px;
 }
-.img_fond {
-    margin-top : 100px;
-    padding-top: 60px;
 
-    background-image: url("../images/jardin_tour.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height :auto;
-   /* border-radius : 40%;*/
-    
-    background-attachment: fixed;
-    
-
-}
 
 .arrondi {
     border-radius : 10px;
@@ -157,8 +166,10 @@ section {
 }
 
 footer {
-    height : auto;
+    height :100px;
     background-color: rgb(56, 56, 61);
+    position : absolute;
+    
     
    
 }
@@ -176,16 +187,25 @@ footer {
     text-justify:auto;
 }
 
+
+
+/**** Mise ne forme des polices, titres *******/
+
+.text_orange {
+    color : rgba(234, 170, 22, 0.874);
+}
+
+
 p {
     text-align: justify;
     color : grey;
 }
 
 
-h1 {
+.titreBienvenue h1 {
     font-family: 'Dancing Script', cursive;
     color: antiquewhite;
-    font-size: 4em;
+    font-size: 60px;
     text-shadow: 1px 3px 2px #191b15;
     margin-top : 100px;
     padding-top : 10px;
@@ -193,6 +213,14 @@ h1 {
     text-align :center;
     
 }
+.titreBienvenue h3 {
+    text-align: center;
+    color : antiquewhite;
+    font-size: 40px;
+    text-shadow: 1px 3px 2px #191b15;
+    animation : titreh3 ease 3.5s;
+}
+
 h2 {
     color: grey;
     text-shadow: -3px 3px 2px lightgray;
@@ -216,6 +244,8 @@ h5 {
     font-size : 2em;
 }
 
+
+/*** Gestion des images *****/
 .imageLieuDeVie {
     
        
@@ -257,6 +287,8 @@ h5 {
     transition: 0.6s ease-in-out;
 }
 
+/****** Responsive breakpoint *******/
+
 @media(max-width : 992px){
     .img_logo {
         border-radius : 10px;
@@ -277,13 +309,25 @@ h5 {
        
     }
 
+    .titreBienvenue h1{
+        margin-top : 20px;
+    }
+    .titreBienvenue h3 {
+        font-size : 30px;
+        margin-top : 20px;
+    }
+    #premierTrait{
+        margin-top : 5px;
+    }
+ 
+
 
 }
 
 @media(max-width : 650px){
 
     h2 {
-        font-size : 12px;
+        font-size : 15px;
         vertical-align: bottom;
         padding-top : 20px;
     }
@@ -292,12 +336,21 @@ h5 {
        /* position : relative;*/
     }
 
-   h1{
-       font-size : 2em;
+  .titreBienvenue h1{
+       font-size : 30px;
+       margin-top : 20px;
    }
 
    .img_fond {
        height : 300px;
+   }
+
+   .titreBienvenue h3 {
+       font-size : 20px;
+       margin-top : 20px;
+   }
+   #premierTrait{
+       margin-top : 5px;
    }
 
 
@@ -325,15 +378,11 @@ h5 {
         left: 50%;
      
     }
-    h1 {
-        font-family: 'Dancing Script', cursive;
-        color: antiquewhite;
-        font-size: 4em;
-        text-shadow: 1px 3px 2px #191b15;
-        margin-top : 50px;
-        padding-top : 10px;
-        animation : titreh2 ease 3.5s;
-        text-align :center;
+    .tireBienvenue h1 {
+
+        margin-top : 20px;
+       
+      
         
     }
 
@@ -356,6 +405,9 @@ h5 {
    }
 
 }
+
+
+/***** Animations ******/
 
 article {
     animation : animation_article ease 3.5s;
