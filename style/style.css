@@ -70,25 +70,25 @@ a:link {
 }
 
 .img_fond {
-    margin-top : 60px;
-    padding-top: 100px;
+   
+    padding-top: 60px;
 
-    background-image: url("../images/jardin_tour.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/zen1.jpeg") no-repeat fixed 50% 50%;
+    /*background-image :
     /*background-size: cover;*/
-    height :auto;
-   /* border-radius : 40%;*/
+    /*height :auto;
+   /* border-radius : 40%;
     
-    background-attachment: fixed;
-    
+    background-attachment: fixed; */
+    height : 800px;
 
 }
 
 .titreBienvenue {
    
-    margin-top : 1%
+    margin-top : 2%;
    
-    
+   
 }
 
 
@@ -169,6 +169,7 @@ footer {
     height :100px;
     background-color: rgb(56, 56, 61);
     position : absolute;
+    vertical-align: bottom;
     
     
    
