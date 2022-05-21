@@ -11,6 +11,57 @@ body {
     padding :0%;
  
 }
+
+.img_card {
+    height : 100%;
+
+ 
+}
+
+footer {
+    height :100px;
+    background-color: rgb(56, 56, 61);
+    position : absolute;
+    vertical-align: bottom;
+    
+    
+   
+}
+
+header {
+    height :auto;
+    
+    opacity: 0.8;
+    
+}
+.sections {
+    padding : 20px 0;
+}
+.sectionsPresentation {
+    padding-top: 10%;
+    padding-left :2%;
+    padding-right: 2%;
+
+}
+.home {
+    height :750px;
+    background-image : url('../images/ado_chaine.jpg');
+    background-size: cover;
+    background-position :center;
+    margin-top: 125px;
+    position :relative;
+    
+}
+
+.overlay{
+    position: absolute;
+    top : 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ;
+}
+
 /**************** Thème des liens ***********/
 a {
     outline: none;
@@ -42,9 +93,10 @@ a:link {
   a:active {
     
     color: white;
-  }
+  }   
 /********** Mise en forme page d'accueil ***************/
-  #premierTrait {
+/*  
+#premierTrait {
     height: 1px;
     width: 25%;
     margin: -3px auto;
@@ -54,76 +106,27 @@ a:link {
     padding-top : -20px;
     animation : animation_article ease 3.5s;
 }
-
+*/
 .img_logo {
     border-radius : 20px;
-    filter: drop-shadow(15px 10px 4px lightblue);
+    filter: drop-shadow(10px 5px 4px lightgrey);
     width : 120px;
     height : 70px;
 }
 
-.mainPadding {
-    padding : 10.5% 3%;
-
+.transition {
+    height : 30px;
+    width :100%;
+    background-color: rgb(54, 51, 51);
+   
+    position : relative;
+    z-index : -1;
+}
     
 
-}
-
-.img_fond {
-   
-    padding-top: 60px;
-
-    background: url("../images/zen1.jpeg") no-repeat fixed 50% 50%;
-    /*background-image :
-    /*background-size: cover;*/
-    /*height :auto;
-   /* border-radius : 40%;
-    
-    background-attachment: fixed; */
-    height : 800px;
-
-}
-
-.titreBienvenue {
-   
-    margin-top : 2%;
-   
-   
-}
 
 
-nav {
-    opacity : 0.9;
-}
 
-/*** taille des card bootstrap, de façon à les contrôler avec les breakpoint responsive ***/
-.largeur_card {
-    width : 100%;
-    opacity : 0.9;
-
-}
-/*
-#baniere{
-    background-image: url("../images/depositphotos_28085849-stock-illustration-children-playing-under-tree-house.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-*/
-
-section {
-    padding-top : 2%;
-    
-   /* background-size : cover;
-    height : 700px;
-    */
-    vertical-align : center;
-}
-.marge {
-    margin-top : 10px;
-    padding : 11px 3px;
-}
 
 
 .arrondi {
@@ -143,7 +146,7 @@ section {
     width : 170px;
     text-align : center;
     color : white;
-    background-color: rgb(14, 126, 163);
+    background-color: black;
     z-index : 200;
     
 }
@@ -156,34 +159,8 @@ section {
     position: absolute;
     z-index : 2;
     bottom: -12px;
-    left : 3%;    
+    left : 3%;   
 }
-
-.img_card {
-    height : 100%;
-
- 
-}
-
-footer {
-    height :100px;
-    background-color: rgb(56, 56, 61);
-    position : absolute;
-    vertical-align: bottom;
-    
-    
-   
-}
-
-.transition {
-    height : 30px;
-    width : 100%;
-    background-color: rgb(10, 110, 204);
-   
-    position : relative;
-    z-index : -1;
-}
-
 .text_card_justify {
     text-justify:auto;
 }
@@ -206,12 +183,12 @@ p {
 .titreBienvenue h1 {
     font-family: 'Dancing Script', cursive;
     color: antiquewhite;
-    font-size: 60px;
+    margin-top: 2%;
     text-shadow: 1px 3px 2px #191b15;
-    margin-top : 100px;
-    padding-top : 10px;
+    
+    
     animation : titreh2 ease 3.5s;
-    text-align :center;
+    
     
 }
 .titreBienvenue h3 {
@@ -220,6 +197,17 @@ p {
     font-size: 40px;
     text-shadow: 1px 3px 2px #191b15;
     animation : titreh3 ease 3.5s;
+}
+
+.titreBienvenue p {
+    padding : 10%;
+    text-align: center;
+    color : antiquewhite;
+    font-size: 20px;
+    text-align: justify;
+    animation : titreh3 ease 3.5s;
+    text-shadow: 1px 3px 2px #191b15;
+    padding-top : 4%;
 }
 
 h2 {
@@ -288,12 +276,12 @@ h5 {
     transition: 0.6s ease-in-out;
 }
 
-/****** Responsive breakpoint *******/
+/*********************** Responsive breakpoint ***************************/
 
 @media(max-width : 992px){
     .img_logo {
         border-radius : 10px;
-        filter: drop-shadow(20px 10px 4px lightgrey);
+        filter: drop-shadow(10px 5px 4px lightgrey);
         width : 70px;
         height : 30px;
         opacity: 1;
@@ -321,16 +309,18 @@ h5 {
         margin-top : 5px;
     }
  
-
+    .home{
+        margin-top: 58px;
+    }
 
 }
 
 @media(max-width : 650px){
 
     h2 {
-        font-size : 15px;
+        font-size : 20px;
         vertical-align: bottom;
-        padding-top : 20px;
+        padding-top : 25px;
     }
     section {
         padding-top : 5%;
