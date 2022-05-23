@@ -19,13 +19,16 @@ body {
 }
 
 footer {
-    height :100px;
+    height :150px;
     background-color: rgb(56, 56, 61);
-    position : absolute;
-    vertical-align: bottom;
+  
     
     
    
+}
+
+footer arrondi {
+      width : 580px;
 }
 
 header {
@@ -277,6 +280,8 @@ h5 {
 }
 
 /*********************** Responsive breakpoint ***************************/
+
+
 
 @media(max-width : 992px){
     .img_logo {
