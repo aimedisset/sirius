@@ -19,17 +19,16 @@ body {
 }
 
 footer {
-    height :150px;
+    height :auto;
     background-color: rgb(56, 56, 61);
+    padding : 2%;
   
     
     
    
 }
 
-footer arrondi {
-      width : 580px;
-}
+
 
 header {
     height :auto;
@@ -116,7 +115,15 @@ a:link {
     width : 120px;
     height : 70px;
 }
-
+footer .img_logo{
+        padding : 1%;
+        border-radius : 10px;
+        filter: drop-shadow(3px 3px 3px lightgrey);
+        width : 70px;
+        height : 30px;
+        opacity: 1;
+    
+}
 .transition {
     height : 30px;
     width :100%;
@@ -141,7 +148,10 @@ a:link {
   
    
 }
-
+footer .arrondi {
+    width : 180px;
+    border-radius: 30px;
+}
 .dropbutton {
     border-radius : 10px;
     padding-top : 3px;
@@ -385,6 +395,14 @@ h5 {
        
       
         
+    }
+    footer {
+        font-size : 14px;
+
+    }
+    .arrondi {
+        font-size: 14px;
+        width : 100px;
     }
 
 }
