@@ -18,12 +18,16 @@ body {
  
 }
 
+.imageCardContact{
+    height : 300px;
+}
+
 footer {
     height :auto;
     background-color: rgb(56, 56, 61);
     padding : 2%;
-  
-    
+    color : white;
+    bottom : O;
     
    
 }
@@ -45,6 +49,12 @@ header {
     padding-right: 2%;
 
 }
+.sectionsContact {
+    padding-top: 15%;
+    padding-left :2%;
+    padding-right: 2%;
+    padding-bottom: 15%;
+}
 .home {
     height :750px;
     background-image : url('../images/ado_chaine.jpg');
@@ -61,7 +71,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    ;
+    
 }
 
 /**************** Thème des liens ***********/
@@ -152,6 +162,12 @@ footer .arrondi {
     width : 210px;
     border-radius: 30px;
 }
+
+.contactButton {
+    width : 210px;
+    border-radius: 30px;
+}
+
 .dropbutton {
     border-radius : 10px;
     padding-top : 3px;
@@ -213,7 +229,9 @@ p {
 }
 
 .titreBienvenue p {
-    padding : 10%;
+    padding-left : 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
     text-align: center;
     color : antiquewhite;
     font-size: 18px;
@@ -252,8 +270,11 @@ h5 {
     
        
      text-align: center;
-        padding: 30px 10%;
-    
+        padding-top: 2%;
+        padding-bottom: 5%;
+        padding-left : 10%;
+        padding-right: 10%; /**padding : 30px 10% */
+        margin-top : 2%;
         position: relative;
     
 }
