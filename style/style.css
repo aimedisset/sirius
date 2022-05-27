@@ -21,15 +21,29 @@ body {
 .imageCardContact{
     height : 300px;
 }
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 footer {
-    height :auto;
+    height :100%;
     background-color: rgb(56, 56, 61);
     padding : 2%;
     color : white;
+    position: absolute;
+    width : 100%;
+
     bottom : O;
     
    
+}
+
+
+.listItem {
+    background-color: rgb(56, 56, 61);
+    text-align: center;
+    color : white;
 }
 
 
@@ -50,6 +64,7 @@ header {
 
 }
 .sectionsContact {
+    margin-top : 1%;
     padding-top: 15%;
     padding-left :2%;
     padding-right: 2%;
@@ -180,9 +195,7 @@ footer .arrondi {
     
 }
 
-.breadcump_text {
-    color : white;
-}
+
 
 .contenu {
     position: absolute;
@@ -269,11 +282,11 @@ h5 {
 .imageLieuDeVie {
     
        
-     text-align: center;
+        text-align: center;
         padding-top: 2%;
         padding-bottom: 5%;
-        padding-left : 10%;
-        padding-right: 10%; /**padding : 30px 10% */
+        padding-left : 15%;
+        padding-right: 15%; /**padding : 30px 10% */
         margin-top : 2%;
         position: relative;
     
@@ -287,11 +300,11 @@ h5 {
     text-align: center;
     font-size: 1.8em;
     margin: 15px;
-    font-weight: 900px;
+    font-weight: 900;
     color : antiquewhite;
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -407,7 +420,7 @@ h5 {
     .imageLieuDeVie h4 {
 
         top: 20%;
-        left: 50%;
+        left: 49%;
      
     }
     .tireBienvenue h1 {
