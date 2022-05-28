@@ -45,6 +45,16 @@ footer {
     text-align: center;
     color : white;
 }
+.listItemSitePartenaire{
+    background-color: rgb(56, 56, 61);
+    text-align: left;
+    color : white;
+}
+.listItemLabel {
+    color : orange;
+    background-color: rgb(56, 56, 61);
+    text-align: center;
+}
 
 
 
@@ -172,6 +182,16 @@ footer .img_logo{
     text-align : center;
   
    
+}
+
+.arrondiReseauxSociaux{
+    border-radius : 10px;
+    padding-left : 10px; 
+    margin-top: 10%;
+    width : 150px;
+    text-align : center;
+    color : orange;
+    border-style: solid 1px orange;
 }
 footer .arrondi {
     width : 210px;
@@ -335,6 +355,12 @@ h5 {
         height : 30px;
         opacity: 1;
     }
+
+    .listItemSitePartenaire{
+        background-color: rgb(56, 56, 61);
+        text-align: center;
+        color : white;
+    }
     .transition {
         height : 30px;
         background-color: lightgray;
@@ -417,6 +443,7 @@ h5 {
         
     
     }
+    
     .imageLieuDeVie h4 {
 
         top: 20%;
