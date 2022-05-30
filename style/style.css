@@ -40,6 +40,13 @@ footer {
 }
 
 
+.listeBefore::before{
+ content: "\276F"; /* Insertion avant  */
+ padding-right: 8px;
+ color: orange; 
+}
+
+
 .listItem {
     background-color: rgb(56, 56, 61);
     text-align: center;
