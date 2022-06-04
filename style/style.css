@@ -49,7 +49,7 @@ footer {
 
 .listItem {
     background-color: rgb(56, 56, 61);
-    text-align: center;
+    text-align: left;
     color : white;
 }
 .listItemSitePartenaire{
@@ -60,7 +60,7 @@ footer {
 .listItemLabel {
     color : orange;
     background-color: rgb(56, 56, 61);
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -185,11 +185,12 @@ footer .img_logo{
     border-radius : 10px;
     padding-left : 10px; 
     margin : 10px;
-    width : 130px;
+    width : 120px;
     text-align : center;
   
    
 }
+
 
 .arrondiReseauxSociaux{
     border-radius : 10px;
@@ -203,6 +204,8 @@ footer .img_logo{
 footer .arrondi {
     width : 210px;
     border-radius: 30px;
+    padding-left : 0;
+    margin : 0;
 }
 
 .contactButton {
@@ -375,7 +378,7 @@ h5 {
 
     .listItemSitePartenaire{
         background-color: rgb(56, 56, 61);
-        text-align: center;
+        text-align:left;
         color : white;
     }
     .transition {
